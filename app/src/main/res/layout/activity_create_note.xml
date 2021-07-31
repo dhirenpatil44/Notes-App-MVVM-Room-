@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    tools:context=".CreateNote">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/EdtTitleCreate"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginTop="15sp"
+            android:hint="Title"
+            android:padding="10dp"
+            android:fontFamily="@font/dosis_light"
+            android:background="@drawable/edt_shape"/>
+
+        <EditText
+            android:id="@+id/EdtSubtitleCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"
+            android:textStyle="bold"
+            android:hint="Subtitle"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/dosis_light"
+            android:background="@drawable/edt_shape"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:padding="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Priority"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/dosis_light"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/redPri"
+                android:layout_width="30dp"
+                android:src="@drawable/ic_baseline_done_24"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/red_shape"
+                 />
+
+            <ImageView
+                android:id="@+id/yellowPri"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/yellow_shape"
+
+                />
+
+            <ImageView
+                android:id="@+id/greenPri"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/green_shape"
+                 />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/EdtNotesCreate"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="15sp"
+            android:hint="Notes"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:fontFamily="@font/dosis_light"
+            android:background="@drawable/edt_shape"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatBTCreateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_done_24"
+        android:layout_margin="15sp"/>
+
+</RelativeLayout>
